@@ -14,7 +14,7 @@ header_font = "Arial-16"
 window_width = 900
 """Ширина окна"""
 
-window_height = 12
+window_height = 1200
 """Высота окна"""
 
 scale_factor = 1
@@ -28,7 +28,7 @@ scale_factor = 1
 def calculate_scale_factor(max_distance):
     """Вычисляет значение глобальной переменной **scale_factor** по данной характерной длине"""
     global scale_factor
-    scale_factor = 0.5*min(window_height, window_width)/10
+    scale_factor = 0.5*min(window_height, window_width)/max_distance
     print('Scale factor:', scale_factor)
 
 
