@@ -35,8 +35,6 @@ def read_space_objects_data_from_file(input_filename):
 
 
 def parse_star_parameters(line, star):
-    a=line.split()
-    klas, r, color, star.m, x, y, Vx, Vy = a
     """Считывает данные о звезде из строки.
 
     Входная строка должна иметь слеюущий формат:
