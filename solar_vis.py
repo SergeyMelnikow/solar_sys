@@ -24,7 +24,6 @@ scale_factor = 1
 
 Мера: количество пикселей на один метр."""
 
-
 def calculate_scale_factor(max_distance):
     """Вычисляет значение глобальной переменной **scale_factor** по данной характерной длине"""
     global scale_factor
