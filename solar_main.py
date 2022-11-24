@@ -21,7 +21,7 @@ model_time = 0
 """Физическое время от начала расчёта.
 Тип: float"""
 
-time_scale = 1000.0
+time_scale = 1000000
 """Шаг по времени при моделировании.
 Тип: float"""
 
@@ -158,6 +158,7 @@ def main():
 
         last_time = cur_time
         drawer.update(space_objects, box)
+        solar_input.write_space_objects_data_to_file('output', space_objects)
         time.sleep(1.0 / 60)
 
     print('Modelling finished!')
